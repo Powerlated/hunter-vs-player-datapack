@@ -27,3 +27,7 @@ scoreboard objectives add realDistance dummy
 scoreboard objectives add dimension dummy
 
 scoreboard objectives add deaths deathCount
+
+scoreboard objectives add spawn_x dummy "Spawn X"
+scoreboard objectives add spawn_y dummy "Spawn Y"
+scoreboard objectives add spawn_z dummy "Spawn Z"

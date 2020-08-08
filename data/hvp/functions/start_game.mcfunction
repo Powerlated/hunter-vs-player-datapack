@@ -1,10 +1,3 @@
-title @a title "Starting game..."
-# fill -2 63 -2 2 63 2 bedrock replace
-spreadplayers 0 0 512 1024 true @a
-
-execute as @a[team=Hunters] run tellraw @a ["<",{"selector":"@s","color":"red"},"> Ready or not, here I come!"]
-execute as @a[team=Player] run tellraw @a ["<",{"selector":"@s","color":"blue"},"> Ready or not, here they come!"]
-give @a[team=Hunters] compass 1
-
-effect give @a minecraft:saturation 10 10
-effect give @a minecraft:regeneration 10 10
+execute if entity @a[team=Player] run function hvp:actually_start_game_dont_manually_call
+execute unless entity @a[team=Player] run title @a title "No player!"
+execute unless entity @a[team=Player] run title @a subtitle "Sign up as the player with /trigger be_player!"

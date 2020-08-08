@@ -22,7 +22,7 @@ scoreboard players operation @s distance = @s X_diff
 scoreboard players operation @s distance += @s Y_diff
 scoreboard players operation @s distance += @s Z_diff
 
-# Get square root ready
+# Reset square root variables
 scoreboard players set @a sqrtI 1
 scoreboard players set @a sqrtX 0
 scoreboard players set @a realDistance 0
